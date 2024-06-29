@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Decorgoma</title>
+        <link rel="stylesheet" href="css/estil.css" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script src="js/parallax.min.js"></script>
+        <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js?r=5426"></script>
+        <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/ScrollTrigger.min.js"></script>
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        <script src="js/galeria.js"></script>
+        <script src="js/language.js"></script>
+        <!-- <link rel="preconnect" href="https://fonts.googleapis.com"> -->
+        <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+
+    </head>
+    <body onload="showImg()">
+
+        <!-- Menu -->
+
+        <div id="navi" class="navBar">
+            <a class="logo" href="#">Decorgoma</a>
+            <ul>
+                <li class="activebar 1"><a id="barra1" onclick="ul(0)" href="#quienesSomos">Quien somos</a></li>
+                <li class="2"><a id="barra2" onclick="ul(1)" href="#quehacemos" >Que hacemos</a></li>
+                <li class="3"><a id="barra3" onclick="ul(2)" href="#gal">Galería</a></li>
+                <li class="4"><a id="barra4" onclick="ul(3)" href="#4">Contacto</a></li>
+            </ul>
+        </div>
+
+        <!-- Titulo -->
+
+        <div class="parallax" data-parallax="scroll" data-z-index="1" data-image-src="imagenes/fondo1.jpg">
+            <div class="titulo">
+                <p>DECORGOMA</p>
+            </div>
+            <div class="lang">
+                <ul>
+                    <li class="firstChild"><img onclick="swapLang('ca');" src="imagenes/cat.png"/></li>
+                    <li><img onclick="swapLang('es');" src="imagenes/esp.png"/></li>
+                </ul>
+            </div>
+            <div id="quienesSomos">ª</div>
+        </div>
+
+
+        <!-- quienes somos -->
+
+        <div id="1" class="descr sec">
+            <br><br><br><br>
+            <p id="firstT" class="textReveal titol">¿ Quienes somos ?</p>
+            <br><br>
+            <div class="centrarDescr">
+                <div class="parrafo">
+                    <p class="textReveal">Somos una empresa de mantenimiento fundada en el año 1994 dando servicio tanto al cliente particular como a comunidades</p>
+                    <p class="textReveal">Nuestra mejor carta de presentación son nuestros clientes</p>
+                    <p class="textReveal">Damos calidad en el trabajo y en los materiales con una relación de calidad-precio excelente.</p>
+                    <p class="textReveal">Damos referencias para que el cliente esté seguro en nuestras manos. AQUÍ NO HAY TRAMPAS.</p>
+                </div>
+                <div id="quehacemos">ª</div>
+                <img src="imagenes/logo.PNG"/>
+            </div>
+        </div>
+
+        <!-- que hacemos -->
+
+        <div id="2"  class="parallax2 sec" data-parallax="scroll" data-z-index="1" data-image-src="imagenes/blurParallax.jpg">
+            <div class="work">
+                <br><br>
+                <p id="secondT" class="textReveal titol">¿ Que hacemos ?</p>
+                <br>
+                <div class="parrafowork">
+                    <!-- <ol type="A">
+                        <li>Pintura de escaleras, patio de luces en trabajo vertical, alicatados de vestíbulos, impermeabilización de terrados con fibra, impermeabilización de paredes por capilaridad o condensación.<br></li>
+                        <li>Pintura de garajes en paredes y suelos con epoxi o poliuretanos<br></li>
+                        <li>Mantenimiento de pisos (vertical), alicatado de cocinas y lavabos, cambio de bañera por plato de ducha. Todo tipo de reparaciones en hogar (cambio de descarga y alimentación de vateres, griferia, reparación de rodamientos y cierres en ventanas de aluminio, cambio de cintas y recogedor de persianas, cambio de lama en plàstico o aluminio en ventanas, pintura en blanco o color, venecianos, alisados de paredes)<br></li>
+                    </ol> -->
+                </div>
+                <br><br><br>
+                <div id="lightbox2"></div>
+                <div class="contCirc">
+                    <div class="circle">
+                        <img class="circletop circleTrueImg" src="imagenes/0.jpg">
+                        <p id="workText1">Pintura comunidades</p>
+                        <img class="circlebottom circleTrueImg" src="imagenes/0.jpg">
+                    </div>
+                    <div class="circle">
+                        <img class="circletop circleTrueImg" src="imagenes/foto5.jpeg">
+                        <p id="workText2">Patio de luces</p>
+                        <img class="circlebottom circleTrueImg" src="imagenes/foto6.jpg">
+                    </div>
+                    <div class="circle">
+                        <img class="circletop circleTrueImg" src="imagenes/foto31.jpg">
+                        <p id="workText3">Impermeabilizacion terrados</p>
+                        <img class="circlebottom circleTrueImg" src="imagenes/foto32.jpg">
+                    </div>
+                    <div class="circle">
+                        <img class="circletop circleTrueImg" src="imagenes/foto33.jpg">
+                        <p id="workText4">Pintura garajes</p>
+                        <img class="circlebottom circleTrueImg" src="imagenes/foto34.jpg">
+                    </div>
+                </div>
+                <div class="contCirc">
+                    <div class="circle">
+                        <img class="circletop circleTrueImg" src="imagenes/foto3.jpeg">
+                        <p id="workText5">Esmaltes puertas ascensor</p>
+                        <img class="circlebottom circleTrueImg" src="imagenes/foto4.jpeg">
+                    </div>
+                    <div class="circle">
+                        <img class="circletop circleTrueImg" src="imagenes/foto17.jpeg">
+                        <p id="workText6">Impermeabilizar humedades</p>
+                        <img class="circlebottom circleTrueImg" src="imagenes/foto18.jpeg">
+                    </div>
+                    <div class="circle">
+                        <img class="circletop circleTrueImg" src="imagenes/0.jpg">
+                        <p id="workText7">Alicatados vestíbulos</p>
+                        <img class="circlebottom circleTrueImg" src="imagenes/0.jpg">
+                    </div>
+                    <div class="circle">
+                        <img class="circletop circleTrueImg" src="imagenes/foto21.jpeg">
+                        <p id="workText8">Reparaciónes persianas</p>
+                        <img class="circlebottom circleTrueImg" src="imagenes/0.jpg">
+                    </div>
+                    <div class="circle">
+                        <img class="circletop circleTrueImg" src="imagenes/foto13.jpeg">
+                        <p id="workText9">Instalación platos de ducha</p>
+                        <img class="circlebottom circleTrueImg" src="imagenes/foto14.jpeg">
+                    </div>
+                </div>
+                <div class="contCirc">
+                    <div class="circle">
+                        <img class="circletop circleTrueImg" src="imagenes/0.jpg">
+                        <p id="workText10">Alicatado de cocinas y lavabos</p>
+                        <img class="circlebottom circleTrueImg" src="imagenes/0.jpg">
+                    </div>
+                    <div class="circle">
+                        <img class="circletop circleTrueImg" src="imagenes/0.jpg">
+                        <p id="workText11" class="specialTwoLines">Reparación de descargas o instalación de váter</p>
+                        <img class="circlebottom circleTrueImg" src="imagenes/0.jpg">
+                    </div>
+                    <div class="circle">
+                        <img class="circletop circleTrueImg" src="imagenes/foto27.jpg">
+                        <p id="workText12">Pintura interiores pisos</p>
+                        <img class="circlebottom circleTrueImg" src="imagenes/foto28.jpg">
+                    </div>
+                    <div class="circle">
+                        <img class="circletop circleTrueImg" src="imagenes/foto15.jpeg">
+                        <p id="workText13">Pintura decorativa</p>
+                        <img class="circlebottom circleTrueImg" src="imagenes/foto16.jpeg">
+                    </div>
+                </div>
+                <div class="contCirc">
+                    <div class="circle">
+                        <img class="circletop circleTrueImg" src="imagenes/foto29.jpg">
+                        <p id="workText14">Empapelados</p>
+                        <img class="circlebottom circleTrueImg" src="imagenes/foto30.jpg">
+                    </div>
+                    <div class="circle">
+                        <img class="circletop circleTrueImg" src="imagenes/foto1.jpg">
+                        <p id="workText15">Quitar grafitis</p>
+                        <img class="circlebottom circleTrueImg" src="imagenes/foto2.jpg">
+                    </div>
+                    <div class="circle">
+                        <img class="circletop circleTrueImg" src="imagenes/foto7.jpeg">
+                        <p id="workText16">Reparación humedades</p>
+                        <img class="circlebottom circleTrueImg" src="imagenes/foto8.jpeg">
+                    </div>
+                    <div class="circle">
+                        <img class="circletop circleTrueImg" src="imagenes/foto9.jpeg">
+                        <p id="workText17">Reparaciónes varias</p>
+                        <img class="circlebottom circleTrueImg" src="imagenes/foto10.jpeg">
+                    </div>
+                    <div class="circle">
+                        <img class="circletop circleTrueImg" src="imagenes/foto11.jpeg">
+                        <p id="workText18">Pladur</p>
+                        <img class="circlebottom circleTrueImg" src="imagenes/foto12.jpeg">
+                    </div>
+                </div>
+                <div class="contCirc">
+                    <div class="circle">
+                        <img class="circletop circleTrueImg" src="imagenes/foto19.jpeg">
+                        <p id="workText19">Barnizado de tarimas</p>
+                        <img class="circlebottom circleTrueImg" src="imagenes/foto20.jpeg">
+                    </div>
+                    <div class="circle">
+                        <img class="circletop circleTrueImg" src="imagenes/foto23.jpeg">
+                        <p id="workText20">Cambio bañeras</p>
+                        <img class="circlebottom circleTrueImg" src="imagenes/foto24.jpeg">
+                    </div>
+                    <div class="circle">
+                        <img class="circletop circleTrueImg" src="imagenes/foto25.jpg">
+                        <p id="workText21">Esmaltado puertas vestíbulo</p>
+                        <img class="circlebottom circleTrueImg" src="imagenes/foto26.jpg">
+                    </div>
+                    <div class="circle">
+                        <img class="circletop circleTrueImg" src="imagenes/0.jpg">
+                        <p id="workText22">aaaaaaaaaaaaaaaa</p>
+                        <img class="circlebottom circleTrueImg" src="imagenes/0.jpg">
+                    </div>
+                </div>
+                <div id="gal"></div>
+                <br><br><br><br>
+            </div>
+        </div>
+
+        <!-- galeria -->
+
+        <div id="3" class="galeria sec" >
+            <br>
+            <!--<h1 class="neon">GALERÍA</h1> -->
+            <p id="thirdT" class="galeriatitulo textReveal titol">Galería</p>
+            <div id="lightbox"></div>
+            <div class="galeriaImg" style="--n-rows: 3; --n-cols: 10">
+                <style>.hex-cell:nth-of-type(9n + 1) { grid-column-start: 2 }</style>
+                <div class="hex-cell textReveal"><img src="imagenes/foto2.jpg" class="galeriaTrueImg"/></div>
+                <div class="hex-cell textReveal"><img src="imagenes/foto20.jpeg" class="galeriaTrueImg"/></div>
+                <div class="hex-cell textReveal"><img src="imagenes/foto14.jpeg" class="galeriaTrueImg"/></div>
+                <div class="hex-cell textReveal"><img src="imagenes/foto8.jpeg" class="galeriaTrueImg"/></div>
+                <div class="hex-cell textReveal"><img src="imagenes/foto10.jpeg" class="galeriaTrueImg"/></div>
+                <div class="hex-cell textReveal"><img src="imagenes/foto16.jpeg" class="galeriaTrueImg"/></div>
+                <div class="hex-cell textReveal"><img src="imagenes/foto3.jpeg" class="galeriaTrueImg"/></div>
+                <div class="hex-cell textReveal"><img src="imagenes/foto15.jpeg" class="galeriaTrueImg"/></div>
+                <div class="hex-cell textReveal"><img src="imagenes/foto5.jpeg" class="galeriaTrueImg"/></div>
+                <div class="hex-cell textReveal"><img src="imagenes/foto61.jpg" class="galeriaTrueImg"/></div>
+                <div class="hex-cell textReveal"><img src="imagenes/foto9.jpeg" class="galeriaTrueImg"/></div>
+                <div class="hex-cell textReveal"><img src="imagenes/foto18.jpeg" class="galeriaTrueImg"/></div>
+                <div class="hex-cell textReveal"><img src="imagenes/foto60.jpg" class="galeriaTrueImg"/></div>
+            </div>
+
+        </div>
+
+        <!-- CONTACTO -->
+
+        <div id="4" class="parallax sec" data-parallax="scroll" data-z-index="1" data-image-src="imagenes/fondo8.jpg">
+            <br>
+            <div class="contacto">
+                <p id="fourthT" class="conttitulo titol">Contáctanos</p>
+                
+                <!-- Contactanos animacion que da vueltas -->
+                <div class="center">
+                    <div class="circleContact">
+                      <img class="logoContact" src="imagenes/logoWhite.PNG"/>
+                      <!-- <div class="logoContact">S</div> -->
+                      <div class="textContact">
+                        <svg x="0" y="0" viewBox="0 0 300 300" enable-background="new 0 0 300 300" xml:space="preserve">
+                        <defs>
+                          <path id="circlePath"
+                            d="
+                            M 150, 150
+                            m -120, 0
+                            a 120,120 0 0,1 240,0
+                            a 120,120 0 0,1 -240,0
+                            "
+                           />
+                        </defs>
+                          <g>
+                          <text>
+                            <textPath xlink:href="#circlePath" id="contactaAnimacionText1">
+                                Para más información &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Para presupuesto</textPath>
+                          </text>
+                          </g>
+                        </svg>
+                      </div>
+                      <div id="contactaAnimacionTitulo" class="buttonContact">Contáctanos</div>
+                    </div>
+                </div>
+
+                <!-- Fin de animacion-->
+
+                <div class="contactdata">
+                    <div class="contelement wrapper" >
+                            <div class="google">
+                                <i class="fa fa-google" aria-hidden="true"></i>
+                            </div>
+                        <p class="pmail">decorgoma@yahoo.es</p>
+                    </div>
+                    <div class="contelement  wrapper">
+                        <div class="map">
+                            <i class="fa fa-map-marker" aria-hidden="true"></i>
+                        </div>
+                        <p class="pmap">Barcelona, C\ Malats nº 65 local</p>
+                    </div>
+                    <div class="contelement  wrapper">
+                        <div class="phone">
+                            <i class="fa fa-phone-square" aria-hidden="true"></i>
+                        </div>
+                        <p class="pphone">933457693 -  610959416</p>
+                    </div>
+                </div>
+
+                <div class="mapouter">
+                    <div class="gmap_canvas">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d747.7781483894502!2d2.1857084!3d41.4367785!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4bcdf3e83624f%3A0xf8484366dceae99a!2sDecorgoma!5e0!3m2!1ses!2ses!4v1659221172695!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            window.addEventListener('scroll', (event) => {
+                var scrollTop = $(this).scrollTop();
+                if (scrollTop <= 0) {
+                    $(".navBar").removeClass("sticky");
+                }
+                else{
+                    $(".navBar").addClass("sticky");
+                }
+            });
+
+            const sections = document.querySelectorAll(".sec");
+            const navLi = document.querySelectorAll("#navi li");
+
+            window.onscroll = () => {
+                var current = "";
+
+                sections.forEach((section) => {
+                    const sectionTop = section.offsetTop;
+                        if (window.scrollY >= sectionTop - 130) {
+                        current = section.getAttribute("id"); }
+                });
+
+                navLi.forEach((li) => {
+                    li.classList.remove("activebar");
+                    if (li.classList.contains(current)) {
+                        li.classList.add("activebar");
+                    }
+                });
+            };
+
+            gsap.registerPlugin(ScrollTrigger);
+            // REVEAL //
+            gsap.utils.toArray(".textReveal").forEach(function (elem) {
+                ScrollTrigger.create({
+                    trigger: elem,
+                    start: "top 80%",
+                    end: "bottom 28%",
+                    markers: false,
+                    onEnter: function () {
+                        gsap.fromTo(
+                            elem,
+                            { y: 100, autoAlpha: 0 },
+                            {
+                                duration: 1.25,
+                                y: 0,
+                                autoAlpha: 1,
+                                ease: "back",
+                                overwrite: "auto"
+                            }
+                        );
+                    },
+                    onLeave: function () {
+                        gsap.fromTo(elem, { autoAlpha: 1 }, { autoAlpha: 0, overwrite: "auto" });
+                    },
+                    onEnterBack: function () {
+                        gsap.fromTo(
+                            elem,
+                            { y: -100, autoAlpha: 0 },
+                            {
+                                duration: 1.25,
+                                y: 0,
+                                autoAlpha: 1,
+                                ease: "back",
+                                overwrite: "auto"
+                            }
+                        );
+                    },
+                    onLeaveBack: function () {
+                        gsap.fromTo(elem, { autoAlpha: 1 }, { autoAlpha: 0, overwrite: "auto" });
+                    }
+                });
+            });
+
+            /* para mostrar imagenes circulos, al igual que la galeria */
+            gsap.utils.toArray(".circle").forEach(function (elem) {
+                ScrollTrigger.create({
+                    trigger: elem,
+                    start: "top 75%",
+                    end: "bottom 35%",
+                    markers: false,
+                    onEnter: function () {
+                        gsap.fromTo(
+                            elem,
+                            { y: 100, autoAlpha: 0 },
+                            {
+                                duration: 1.25,
+                                y: 0,
+                                autoAlpha: 1,
+                                ease: "back",
+                                overwrite: "auto"
+                            }
+                        );
+                    },
+                    onLeave: function () {
+                        gsap.fromTo(elem, { autoAlpha: 1 }, { autoAlpha: 0, overwrite: "auto" });
+                    },
+                    onEnterBack: function () {
+                        gsap.fromTo(
+                            elem,
+                            { y: -100, autoAlpha: 0 },
+                            {
+                                duration: 1.25,
+                                y: 0,
+                                autoAlpha: 1,
+                                ease: "back",
+                                overwrite: "auto"
+                            }
+                        );
+                    },
+                    onLeaveBack: function () {
+                        gsap.fromTo(elem, { autoAlpha: 1 }, { autoAlpha: 0, overwrite: "auto" });
+                    }
+                });
+            });
+
+        </script>
+
+    </body>
+</html>
